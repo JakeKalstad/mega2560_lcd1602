@@ -14,12 +14,12 @@ bench = false
 panic-halt = "0.2.0"
 ag-lcd = "*"
 embedded-hal = "0.2.7"
-
+embedded-time = "*"
+rp2040-hal="*"
 [dependencies.arduino-hal]
 git = "https://github.com/rahix/avr-hal"
 rev = "3b8f39fa2ec5e3359c7bedc33d982e75e8cc3700"
 features = ["arduino-mega2560"]
-
 # Configure the build for minimal size - AVRs have very little program memory
 [profile.dev]
 panic = "abort"
